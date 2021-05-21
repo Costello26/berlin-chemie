@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* HEAD */
+#top {
+    background-color: #e5e5e5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#top .top__logo {
+    width: 15%;
+    max-width: 50%;
+}
+
+#top .top__logo img{
+    width: 100%;
+}
+/* HEAD */
+
+/* CONTENT */
+#content {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#content .content__inner{ 
+    width: 90%;
+    max-width: 1200px;
+    padding-top: 30px;
+}
+
+#content .content__inner .inner__body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#content .content__inner .inner__body .body__item.primary{
+    background-color: #f9eed3;
+}
+
+#content .content__inner .inner__body .body__item.secondary{
+    background-color: #e5f2ff;
+}
+
+#content .content__inner .inner__body .body__item{
+    width: 45%;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.body__item.two-cols .item__inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body__item.two-cols .item__inner .item__logo__wrap{
+    width: 100%;
+}
+
+.body__item.two-cols .item__inner .item__logo__wrap img{
+    max-width: 60%;
+}
+
+.body__item.two-cols.third-line .item__inner .item__logo__wrap,
+.body__item.second-line .item__inner .item__logo__wrap{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.body__item.two-cols.third-line .item__inner .item__logo__wrap img,
+.body__item.second-line .item__inner .item__logo__wrap img
+{
+    width: auto;
+    max-width: 60%;
+}
+
+.body__item.two-cols.third-line .item__inner .item__pack__wrap{
+    max-width: 35%;
+}
+
+.body__item.two-cols .item__inner .item__pack__wrap{
+    order: 3;
+    max-width: 30%;
+}
+
+.body__item.second-line .item__inner .item__pack__wrap{
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.body__item.second-line .item__inner .item__pack__wrap img{
+    max-width: 40%;
+}
+
+.body__item.two-cols .item__inner .item__content__wrap{
+    width: 60%;
+    margin-top: auto;
+}
+
+.body__item .item__inner .item__content__wrap p{
+    padding-bottom: 15px;
+}
+
+.body__item .item__inner .item__content__wrap p.content__heading{
+    font-size: 1.1em;
+}
+
+.body__item .item__inner .item__content__wrap .content__link{
+    color: #008aff;
+}
+
+/* CONTENT */
+
+/* FOOTER */
+#footer{
+    background-color: #037881;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer p{
+    color: #fff;
+}
+
+#footer .footer__inner{
+    width: 90%;
+    max-width: 1600px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer .inner__copyright p{
+    padding-bottom: 14px;
+}
+
+#footer .inner__instruction p{
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+/* FOOTER */
+
+/* RESPONSIVE */
+@media (max-width: 992px){
+    #content .content__inner .inner__body .body__item{
+        width: 40%;
+    }
+}
+
+@media (max-width: 580px){
+    #top .top__logo {
+        width: 25%;
+        max-width: 50%;
+    }
+    .body__item.two-cols .item__inner .item__pack__wrap{
+        order: unset;
+        max-width: 100% !important;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .body__item.two-cols .item__inner .item__pack__wrap img{
+        max-width: 60% !important;
+    }
+    .body__item.two-cols .item__inner .item__content__wrap {
+        width: 100%;
+        margin: unset;
+    }
+    .body__item.second-line .item__inner .item__pack__wrap img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px){
+    #content .content__inner .inner__body .body__item {
+        width: 80%;
+    }
+    .body__item.two-cols .item__inner{
+        justify-content: center;
+    }
+    .body__item.two-cols .item__inner .item__logo__wrap{
+        text-align: center;
+    }
+}
+/* RESPONSIVE */
