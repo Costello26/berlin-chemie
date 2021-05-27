@@ -27,6 +27,17 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { // когда весь HTML загружен
+            const bodyItem = document.querySelectorAll('.body__item')
+            bodyItem.forEach(item => {
+                item.addEventListener('click', ()=> {
+                    const itemLink = item.querySelector('.content__link')
+                    itemLink.click()
+                })
+            })
+        });
+    </script>
 </head>
 
 <body>
@@ -60,7 +71,7 @@
                                 <span class="bold">Действующее вещество (МНН):</span> cиметикон <br>
                                 <span class="bold">Лекарственная форма:</span> эмульсия для приема внутрь, 100 мг/мл.
                             </p>
-                            <a href="docs/IMU Espumisan drops_ren_2019_ru.doc" class="content__link">Подробнее>></a>
+                            <a href="docs/IMU Espumisan drops_ren_2019_ru.pdf" class="content__link" target="_blank">Подробнее>></a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +98,7 @@
                                 <span class="bold">Таъсир қилувчи модда (ХПН):</span> cиметикон <br>
                                 <span class="bold">Дори шакли:</span> ичга қабул қилиш учун эмульсия, 100 мг/мл
                             </p>
-                            <a href="docs/IMU Espumisan drops_ren_2019_uz_Corr_RZ.docx" class="content__link">Батафсил маълумот>></a>
+                            <a href="docs/IMU Espumisan drops_ren_2019_uz_Corr_RZ.pdf" class="content__link" target="_blank">Батафсил маълумот>></a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +121,7 @@
                                 внимательно прочтите весь листок-вкладыш, поскольку в нем содержится <br>
                                 важная для Вас информация.
                             </p>
-                            <a href="docs/PIL Iodomarin 100 rus 2016.doc" class="content__link">Подробнее>></a>
+                            <a href="docs/PIL Iodomarin 100 rus 2016.pdf" class="content__link" target="_blank">Подробнее>></a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +144,7 @@
                                 диққат билан тўлиқ ўқиб чиқинг, чунки унда Сиз учун муҳим маълумот <br>
                                 сақланади.
                             </p>
-                            <a href="docs/PIL Iodomarin 100 uzb 2016.doc" class="content__link">Батафсил маълумот>></a>
+                            <a href="docs/PIL Iodomarin 100 uzb 2016.pdf" class="content__link" target="_blank">Батафсил маълумот>></a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +173,7 @@
                                 информация.
 
                             </p>
-                            <a href="docs/PIL Iodomarin rus 2018.docx" class="content__link">Подробнее>></a>
+                            <a href="docs/PIL Iodomarin rus 2018.pdf" class="content__link" target="_blank">Подробнее>></a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +202,7 @@
                                 учун муҳим маълумот сақланади.
 
                             </p>
-                            <a href="docs/PIL Iodomarin uzb 2018.docx" class="content__link">Батафсил маълумот>></a>
+                            <a href="docs/PIL Iodomarin uzb 2018.pdf" class="content__link" target="_blank">Батафсил маълумот>></a>
                         </div>
                     </div>
                 </div>
